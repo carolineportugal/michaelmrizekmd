@@ -9,3 +9,58 @@
 //   font-family:"Sommet Heavy";
 //   src: url('../fonts/sommet-heavy.otf');
 // }
+
+//Font Mixins
+@mixin gitan-regular {
+  font-family: "gitan-latin",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin gitan-italic {
+  font-family: "gitan-latin",sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin gitan-medium {
+  font-family: "gitan-latin",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin gitan-medium-italic {
+  font-family: "gitan-latin",sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@mixin gitan-semibold {
+  font-family: "gitan-latin",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin gitan-semibold-italic {
+  font-family: "gitan-latin",sans-serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
+@mixin gitan-bold {
+  font-family: "gitan-latin",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin gitan-bold-italic {
+  font-family: "gitan-latin",sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@mixin gitan-extrabold {
+  font-family: "gitan-latin",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
