@@ -1,11 +1,20 @@
 //Navigation
 
+nav{
+  min-height:100%;
+  border-right:1px solid rgba(0,0,0,0.05);
+  background:yellow;
+  min-height:100%;
+}
+
 ul{
   list-style: none;
   @include gitan-semibold();
   text-transform: uppercase;
   font-size: 13px;
-  position:fixed;
+  // position:fixed;
+  text-align:right;
+
   
   li{
     margin:1rem 0;

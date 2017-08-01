@@ -19,4 +19,5 @@ html, body{
   @include font-smoothing();
   font-feature-settings: "onum" on;
   @include gitan-regular();
+  min-height:100%;
 }
