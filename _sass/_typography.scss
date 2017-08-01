@@ -69,12 +69,20 @@
 
 h1{
   @include gitan-bold();
-  margin-bottom:4rem;
+  margin-bottom:3rem;
   margin-top:0;
 }
 
 h4{
-  
+  @include gitan-bold();
+  margin-bottom:3rem;
+  margin-top:0;
+}
+
+h3{
+  @include gitan-bold();
+  margin-bottom:3rem;
+  margin-top:0;
 }
 
 p{

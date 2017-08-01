@@ -4,10 +4,17 @@ nav{
   position:relative;
   display: flex;
   justify-content: flex-end;
+  padding:3rem 1rem 0 0;
 }
 
 .nav-content{
   position:fixed;
+}
+
+.logo{
+  @include gitan-bold();
+  // text-transform: uppercase;
+  margin-bottom:2rem;
 }
 
 ul{
@@ -15,9 +22,10 @@ ul{
   @include gitan-semibold();
   text-transform: uppercase;
   font-size: 13px;
+  letter-spacing: .03rem;
   text-align:right;
   
   li{
-    margin:1rem 0;
+    margin:.6rem 0;
   }
 }
