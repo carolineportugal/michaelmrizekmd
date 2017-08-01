@@ -69,6 +69,8 @@
 
 h1{
   @include gitan-bold();
+  margin-bottom:4rem;
+  margin-top:0;
 }
 
 h4{
