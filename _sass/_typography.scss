@@ -11,76 +11,46 @@
 // }
 
 //Font Mixins
-@mixin gitan-regular {
-  font-family: "gitan-latin",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
-@mixin gitan-italic {
-  font-family: "gitan-latin",sans-serif;
-  font-style: italic;
-  font-weight: 400;
-}
-
-@mixin gitan-medium {
-  font-family: "gitan-latin",sans-serif;
+@mixin meta-serif-book {
+  font-family: "ff-meta-serif-web-pro",serif;
   font-style: normal;
   font-weight: 500;
 }
 
-@mixin gitan-medium-italic {
-  font-family: "gitan-latin",sans-serif;
+@mixin mata-serif-book-italic {
+  font-family: "ff-meta-serif-web-pro",serif;
   font-style: italic;
   font-weight: 500;
 }
 
-@mixin gitan-semibold {
-  font-family: "gitan-latin",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-
-@mixin gitan-semibold-italic {
-  font-family: "gitan-latin",sans-serif;
-  font-style: italic;
-  font-weight: 600;
-}
-
-@mixin gitan-bold {
-  font-family: "gitan-latin",sans-serif;
+@mixin meta-serif-bold {
+  font-family: "ff-meta-serif-web-pro",serif;
   font-style: normal;
   font-weight: 700;
 }
 
-@mixin gitan-bold-italic {
-  font-family: "gitan-latin",sans-serif;
+@mixin meta-serif-bold-italic {
+  font-family: "ff-meta-serif-web-pro",serif;
   font-style: italic;
   font-weight: 700;
-}
-
-@mixin gitan-extrabold {
-  font-family: "gitan-latin",sans-serif;
-  font-style: normal;
-  font-weight: 800;
 }
 
 //Default values for typography
 
 h1{
-  @include gitan-bold();
+  @include meta-serif-bold();
   margin-bottom:3rem;
   margin-top:0;
 }
 
 h4{
-  @include gitan-bold();
+  @include meta-serif-bold();
   margin-bottom:3rem;
   margin-top:0;
 }
 
 h3{
-  @include gitan-bold();
+  @include meta-serif-bold();
   margin-bottom:3rem;
   margin-top:0;
 }

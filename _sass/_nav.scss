@@ -12,20 +12,20 @@ nav{
 }
 
 .logo{
-  @include gitan-bold();
+  @include meta-serif-bold();
   // text-transform: uppercase;
   margin-bottom:2rem;
+  font-size:20px;
 }
 
 ul{
   list-style: none;
-  @include gitan-semibold();
-  text-transform: uppercase;
-  font-size: 13px;
+  @include meta-serif-book();
+  // text-transform: uppercase;
+  font-size: 16px;
   letter-spacing: .03rem;
   text-align:right;
   
   li{
-    margin:.6rem 0;
   }
 }
