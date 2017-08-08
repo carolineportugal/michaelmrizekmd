@@ -12,32 +12,27 @@ nav{
 }
 
 .logo{
-  // font-size:25px;
-  // margin-bottom:1rem;
+  font-size:20px;
+  margin-bottom:2rem;
   @include futura-bold();
-  // text-transform: uppercase;
+  text-transform: uppercase;
   // letter-spacing: .1rem;
-  // background: #333;
-  // color:white;
-  // line-height: 1;
-  // padding: .3rem 0rem;
-  // margin-left:-2000rem;
-  // text-align: right;
 }
 
 ul{
   list-style: none;
-  // text-transform: uppercase;
-  font-size: 16px;
-  // letter-spacing: .1rem;
+  font-size: 17px;
   text-align:right;
-  
+  @include meta-serif-book();
+
   li{
-    margin:.2rem 0;
+    margin-bottom:.2rem;
+    opacity:.7;
   }
   
   .active{
-    // color:red;
+    @include meta-serif-bold();
+    opacity:1;
   }
   
 }
