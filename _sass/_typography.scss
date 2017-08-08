@@ -1,17 +1,5 @@
 //Default values for typography
 
-h1{
-  @include meta-serif-bold();
-  margin-bottom:3rem;
-  margin-top:0;
-}
-
-h4{
-  @include meta-serif-bold();
-  margin-bottom:3rem;
-  margin-top:0;
-}
-
 h3{
   @include meta-serif-bold();
   margin-bottom:3rem;
