@@ -5,34 +5,35 @@ nav{
   display: flex;
   justify-content: flex-end;
   padding-top:3rem;
-}
 
-.nav-content{
-  position:fixed;
-}
 
-.logo{
-  font-size:20px;
-  margin-bottom:2rem;
-  @include futura-bold();
-  text-transform: uppercase;
-  // letter-spacing: .1rem;
-}
-
-ul{
-  list-style: none;
-  font-size: 17px;
-  text-align:right;
-  @include meta-serif-book();
-
-  li{
-    margin-bottom:.2rem;
-    opacity:.7;
+  .nav-content{
+    position:fixed;
   }
-  
-  .active{
-    @include meta-serif-bold();
-    opacity:1;
+
+  .logo{
+    font-size:18px;
+    @include futura-bold();
+    text-transform: uppercase;
   }
-  
+
+  ul{
+    list-style: none;
+    font-size: 17px;
+    text-align:right;
+    @include meta-serif-book();
+
+    li{
+      margin-bottom:.3rem;
+      opacity:.4;
+    }
+    
+    .active{
+      @include meta-serif-bold();
+      opacity:1;
+      background: #eee;
+    }
+    
+  }
+
 }
