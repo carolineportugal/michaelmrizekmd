@@ -1,0 +1,67 @@
+//Embed Fonts
+
+// @font-face{
+//   font-family:"Sommet Heavy Italic";
+//   src: url('../fonts/sommet-heavy-italic.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Heavy";
+//   src: url('../fonts/sommet-heavy.otf');
+// }
+
+//Font Mixins
+
+@mixin meta-serif-book {
+  font-family: "ff-meta-serif-web-pro",serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin mata-serif-book-italic {
+  font-family: "ff-meta-serif-web-pro",serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@mixin meta-serif-bold {
+  font-family: "ff-meta-serif-web-pro",serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin meta-serif-bold-italic {
+  font-family: "ff-meta-serif-web-pro",serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@mixin meta-serif-sc{
+  font-family: "ff-meta-serif-sc-web-pro",serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin meta-sans-normal{
+  font-family: "ff-meta-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin meta-sans-normal-italic{
+  font-family: "ff-meta-web-pro",sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin meta-sans-bold{
+  font-family: "ff-meta-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin meta-sans-bold-italic{
+  font-family: "ff-meta-web-pro",sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}

@@ -1,40 +1,3 @@
-//Embed Fonts
-
-// @font-face{
-//   font-family:"Sommet Heavy Italic";
-//   src: url('../fonts/sommet-heavy-italic.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Heavy";
-//   src: url('../fonts/sommet-heavy.otf');
-// }
-
-//Font Mixins
-@mixin meta-serif-book {
-  font-family: "ff-meta-serif-web-pro",serif;
-  font-style: normal;
-  font-weight: 500;
-}
-
-@mixin mata-serif-book-italic {
-  font-family: "ff-meta-serif-web-pro",serif;
-  font-style: italic;
-  font-weight: 500;
-}
-
-@mixin meta-serif-bold {
-  font-family: "ff-meta-serif-web-pro",serif;
-  font-style: normal;
-  font-weight: 700;
-}
-
-@mixin meta-serif-bold-italic {
-  font-family: "ff-meta-serif-web-pro",serif;
-  font-style: italic;
-  font-weight: 700;
-}
-
 //Default values for typography
 
 h1{
@@ -56,6 +19,8 @@ h3{
 }
 
 p{
-  font-size:17px;
-  line-height: 1.5;
+  @include meta-serif-book();
+  font-size:17.5px;
+  line-height: 1.55;
+  margin-bottom:2rem;
 }

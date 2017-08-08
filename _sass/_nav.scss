@@ -4,7 +4,7 @@ nav{
   position:relative;
   display: flex;
   justify-content: flex-end;
-  padding:3rem 1rem 0 0;
+  padding-top:3rem;
 }
 
 .nav-content{
@@ -15,17 +15,18 @@ nav{
   @include meta-serif-bold();
   // text-transform: uppercase;
   margin-bottom:2rem;
-  font-size:20px;
+  font-size:25px;
 }
 
 ul{
   list-style: none;
   @include meta-serif-book();
-  // text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: .03rem;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: .1rem;
   text-align:right;
   
   li{
+    margin:.7rem 0;
   }
 }
