@@ -19,7 +19,7 @@
 html, body{
   @include font-smoothing();
   font-feature-settings: "onum" on;
-  // @include meta-serif-book();
+  @include caravel-regular();
   overflow-x:hidden;
 }
 

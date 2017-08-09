@@ -6,7 +6,8 @@ nav{
   justify-content: flex-end;
 
   .nav-content{
-    padding-top:3rem;
+    padding:3rem 2rem 0 0;
+    // margin-right: 15px;
     position:fixed;
     // background: red;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
@@ -16,33 +17,10 @@ nav{
   }
 
   .logo{
-    font-size:42px;
-    // font-family: "begum";
-    // text-transform: uppercase;
+    font-size:25px;
+    @include begum-bold();
     margin-bottom:1rem;
-    // text-shadow: 0px 5px #cdff00;
-  }
-  
-
-  
-  .two{
-    @include begum-light-italic();
-  }
-  
-  .four{
-    @include begum-regular-italic();
-  }
-
-  .six{
-    @include begum-medium-italic();
-  }
-  
-  .eight{
-    @include begum-semibold-italic();
-  }
-  
-  .ten{
-    @include begum-bold-italic();
+    // color:#2effd2;
   }
 
   ul{

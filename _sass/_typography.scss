@@ -1,15 +1,11 @@
 //Default values for typography
 
 h3{
-  margin-bottom:3rem;
-  margin-top:0;
 }
 
 p{
-  // @include meta-serif-book();
-  font-size:17px;
-  line-height: 1.4;
+  @include caravel-regular();
+  font-size:17.5px;
+  line-height: 1.45;
   margin-bottom:2rem;
-  font-family: "caravel";
-  font-weight:400;
 }
