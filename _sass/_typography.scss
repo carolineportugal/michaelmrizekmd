@@ -1,11 +1,8 @@
 //Default values for typography
 
-h3{
-}
-
 p{
   @include caravel-regular();
-  font-size:17.5px;
+  font-size:17px;
   line-height: 1.45;
   margin-bottom:2rem;
 }
