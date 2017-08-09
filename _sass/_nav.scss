@@ -12,26 +12,47 @@ nav{
   }
 
   .logo{
-    font-size:18px;
-    @include futura-bold();
-    text-transform: uppercase;
+    font-size:22px;
+    // @include futura-bold();
+    // @include meta-serif-bold();
+    font-family: "begum";
+    font-weight: bold;
+    // text-transform: uppercase;
+    margin-bottom:1rem;
+    // text-shadow: 0px 5px #cdff00;
   }
 
   ul{
     list-style: none;
-    font-size: 17px;
+    font-size: 12.5px;
     text-align:right;
     @include meta-serif-book();
+    font-family: "caravel";
+    font-weight: 400;
+    // text-transform: uppercase;
+    letter-spacing: 0.1rem;
 
     li{
       margin-bottom:.3rem;
-      opacity:.4;
+      // opacity:.4;
     }
     
     .active{
-      @include meta-serif-bold();
+      // @include meta-serif-bold();
       opacity:1;
-      background: #eee;
+      position: relative;
+      z-index:100;
+    }
+    
+    .active:after{
+      content: '';
+      position: absolute;
+      top:0;
+      left:0px;
+      height:100%;
+      width: 100%;
+      // background: #eee;
+      z-index: -10;
     }
     
   }
