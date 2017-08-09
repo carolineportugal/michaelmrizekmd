@@ -13,31 +13,91 @@
 //Font Mixins
 
 @mixin caravel-light {
-  font-family: "caravel",sans-serif;
-  font-style: normal;
-  font-weight:300;
+  font-family: "Caravel Light", sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
 
 @mixin caravel-regular {
-  font-family: "caravel",sans-serif;
-  font-style: normal;
-  font-weight:400;
+  font-family: "Caravel Regular", sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
 
 @mixin caravel-medium {
-  font-family: "caravel",sans-serif;
-  font-style: normal;
-  font-weight:500;
+  font-family: "Caravel Medium", sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
 
 @mixin caravel-semibold {
-  font-family: "caravel",sans-serif;
-  font-style: normal;
-  font-weight:600;
+  font-family: "Caravel Semibold", sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
 
 @mixin caravel-bold {
-  font-family: "caravel",sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: "Caravel Bold", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin begum-light {
+  font-family: "Begum Light", serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin begum-light-italic {
+  font-family: "Begum Light Italic", serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin begum-regular {
+  font-family: "Begum Regular", serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin begum-regular-italic {
+  font-family: "Begum Regular Italic", serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin begum-medium {
+  font-family: "Begum Medium", serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin begum-medium-italic {
+  font-family: "Begum Medium Italic", serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin begum-semibold {
+  font-family: "Begum Semibold", serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin begum-semibold-italic{
+  font-family: "Begum Semibold Italic", serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin begum-bold {
+  font-family: "Begum Bold", serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin begum-bold-italic {
+  font-family: "Begum Bold Italic", serif;
+	font-weight: normal;
+	font-style: normal;
 }
