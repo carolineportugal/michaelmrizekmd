@@ -12,8 +12,32 @@
 
 //Font Mixins
 
-@mixin meta-serif-book {
-  font-family: "ff-meta-serif-web-pro",serif;
+@mixin caravel-light {
+  font-family: "caravel",sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight:300;
+}
+
+@mixin caravel-regular {
+  font-family: "caravel",sans-serif;
+  font-style: normal;
+  font-weight:400;
+}
+
+@mixin caravel-medium {
+  font-family: "caravel",sans-serif;
+  font-style: normal;
+  font-weight:500;
+}
+
+@mixin caravel-semibold {
+  font-family: "caravel",sans-serif;
+  font-style: normal;
+  font-weight:600;
+}
+
+@mixin caravel-bold {
+  font-family: "caravel",sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }

@@ -4,29 +4,49 @@ nav{
   position:relative;
   display: flex;
   justify-content: flex-end;
-  padding-top:3rem;
-
 
   .nav-content{
+    padding-top:3rem;
     position:fixed;
+    // background: red;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+    width:100%;
+    height:100%;
+    text-align:right;
   }
 
   .logo{
-    font-size:22px;
-    // @include futura-bold();
-    // @include meta-serif-bold();
-    font-family: "begum";
-    font-weight: bold;
+    font-size:42px;
+    // font-family: "begum";
+    // font-weight: bold;
     // text-transform: uppercase;
     margin-bottom:1rem;
     // text-shadow: 0px 5px #cdff00;
+  }
+  
+  .light{
+    @include caravel-light();
+  }
+  
+  .regular{
+    @include caravel-regular();
+  }
+  
+  .medium{
+    @include caravel-medium();
+  }
+  
+  .semibold{
+    @include caravel-semibold();
+  }
+  
+  .bold{
+    @include caravel-bold();
   }
 
   ul{
     list-style: none;
     font-size: 12.5px;
-    text-align:right;
-    @include meta-serif-book();
     font-family: "caravel";
     font-weight: 400;
     // text-transform: uppercase;
