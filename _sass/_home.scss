@@ -4,12 +4,14 @@
   padding:0;
   
   .outer-bg{
-    width: 100%;
+    width: 700px;
     height:100vh;
     position: relative;
     // background: url('../media/dti-background.png');
     transform-style: preserve-3d;
     // border:3px solid red;
+    left:28%;
+    
   }
 
   .inner-1,
@@ -22,7 +24,7 @@
     top:50%;
     left:50%;
     filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.8));
-    opacity:.5;
+    opacity:.4;
   }
   
   .inner-1{

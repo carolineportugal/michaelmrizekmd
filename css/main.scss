@@ -35,7 +35,6 @@ section:before{
   position: absolute;
   width:9999px;
   height:100%;
-  // background:#67BC9A;
   background-color: #E1E6EC;
   background-image:
     linear-gradient(-180deg, #E1E6EC 2%, #F0F4F7 96%),
@@ -44,5 +43,5 @@ section:before{
   top:0;
   left:-3rem;
   z-index:-10;
-  opacity:.2;
+  opacity:.3;
 }
