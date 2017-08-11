@@ -5,8 +5,8 @@
   
   .outer-bg{
     width: 100%;
-    height:100vh;
-    position: relative;
+    min-height:100vh;
+    position: absolute;
     // background: url('../media/dti-background.png');
     transform-style: preserve-3d;
     border:3px solid red;
@@ -18,7 +18,7 @@
   .inner-4 {
     position:absolute;
     width: auto;
-    height:100%;
+    height:95%;
     top:50%;
     left:50%;
     filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.8));
