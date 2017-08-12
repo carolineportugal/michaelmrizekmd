@@ -17,6 +17,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+//General Variables
+$transition-time:0.2s;
+
 // General Code
 html, body{
   @include font-smoothing();
