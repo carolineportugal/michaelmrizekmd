@@ -50,25 +50,30 @@ nav{
       color:#333;
       line-height: 1;
       transition:0.2s;
+      position: relative;
+      text-decoration: none;
+
       
-      &:hover,
-      &:active{
-        position: relative;
+      &:hover{
         // @include caravel-semibold();
-        text-decoration: underline;
-        transition-duration: 0.2s;
+        text-decoration: none;
+        transition-duration: $transition-time;
       }
+    }
+    
+    .active{
+      position: relative;
     }
     
     .active:after{
       content:'';
       position: absolute;
-      background:#df3331;
+      background:$link-color;
       width:6px;
       height:6px;
       border-radius:50%;
-      // bottom:0px;
-      // right:-13px;
+      bottom:-8px;
+      left:calc(50% - 3px);
     }
     
   }
