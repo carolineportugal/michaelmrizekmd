@@ -14,22 +14,22 @@
               <div class="row">
                 <div class="col-sm-3">
                   <div class="item-wrapper">
-                    <a href=""><li>Practice</li></a>
+                    <a href="{{ site.baseurl}}/practice/" class="{% if page.url == '/practice/' %}active{% endif %}"><li>Practice</li></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="item-wrapper">
-                    <a href="" class="active"><li>About</li></a>
+                    <a href="{{ site.baseurl}}/about/" class="{% if page.url == '/about/' %}active{% endif %}"><li>About</li></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="item-wrapper">
-                    <a href=""><li>Credentials</li></a>
+                    <a href="{{ site.baseurl}}/credentials/" class="{% if page.url == '/credentials/' %}active{% endif %}"><li>Credentials</li></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="item-wrapper">
-                    <a href=""><li>Contact</li></a>
+                    <a href="{{ site.baseurl}}/contact/" class="{% if page.url == '/contact/' %}active{% endif %}"><li>Contact</li></a>
                   </div>
                 </div>
               </div>

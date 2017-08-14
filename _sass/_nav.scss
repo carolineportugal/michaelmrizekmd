@@ -49,22 +49,33 @@ nav{
       display: flex;
       align-items:flex-end;
     }
+    
+    a{
+      &:hover{
+        text-decoration: none;
+      }
+    }
 
     a li{
-      color:#333;
+      color:$black;
       line-height: 1;
-      transition:0.2s;
       position: relative;
       text-decoration: none;
-    
-      &:hover{
-        // @include caravel-semibold();
-        text-decoration: none;
-        transition-duration: $transition-time;
+      position:relative;
+      
+      &:hover:after{
+        content:'';
+        position: absolute;
+        background:$link-color;
+        width:6px;
+        height:6px;
+        border-radius:50%;
+        top:-12px;
+        left:calc(50% - 3px);
       }
       
     }
-    
+      
     .active{
       position: relative;
     }
@@ -76,7 +87,7 @@ nav{
       width:6px;
       height:6px;
       border-radius:50%;
-      top:-12px;
+      top:-11px;
       left:calc(50% - 3px);
     }
     
