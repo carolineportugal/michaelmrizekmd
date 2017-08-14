@@ -15,7 +15,7 @@
 html, body{
   @include font-smoothing();
   font-feature-settings: "onum" on;
-  @include caravel-regular();
+  // @include caravel-regular();
 }
 
 section{
