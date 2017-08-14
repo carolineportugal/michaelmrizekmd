@@ -27,6 +27,8 @@ section{
 
 footer{
   @include caravel-regular();
+  position:relative;
+  bottom:0;
   
   .footer-wrapper{
     height:1px;
