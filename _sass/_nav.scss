@@ -1,5 +1,5 @@
 //Navigation variables
-$nav-height:80px;
+$nav-height:75px;
 
 //Navigation
 nav{
@@ -17,11 +17,12 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
+    line-height: 1;
     
     h3{
       font-size:23px;
       @include begum-bold();
-      margin:0 0 0.8rem 0;
+      margin:0 0 0.7rem 0;
     }
     
     h4{
@@ -35,13 +36,13 @@ nav{
 
   .menu{
     list-style: none;
-    font-size: 12.5px;
+    font-size: 15px;
     @include begum-semibold();
     // border:1px solid blue;
     -webkit-padding-start: 0px;
     margin-bottom:0;
-    text-transform: uppercase;
-    letter-spacing: 0.04rem;
+    letter-spacing: 0.05rem;
+    line-height: 1;
     
     .item-wrapper{
       height:$nav-height;
@@ -75,7 +76,7 @@ nav{
       width:6px;
       height:6px;
       border-radius:50%;
-      bottom:-8px;
+      top:-12px;
       left:calc(50% - 3px);
     }
     
@@ -84,7 +85,7 @@ nav{
   .nav-divider{
     height:1px;
     @include dotted-line();
-    margin-top:3rem;
+    margin-top:2rem;
   }
 
 }
