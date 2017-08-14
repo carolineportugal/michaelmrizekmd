@@ -15,21 +15,12 @@
 html, body{
   @include font-smoothing();
   font-feature-settings: "onum" on;
-  // @include caravel-regular();
+  @include caravel-regular();
+  color:#000;
+  position:relative;
 }
 
 section{
   padding:28rem 0rem;
   position:relative;
 }
-
-// section:after{
-//   content: '';
-//   @include gradient-bg();
-//   position: absolute;
-//   width:100%;
-//   height:100%;
-//   top:0;
-//   z-index:-10;
-//   opacity:.2;
-// }

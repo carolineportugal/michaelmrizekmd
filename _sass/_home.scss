@@ -7,9 +7,8 @@
     width: 100%;
     min-height:100vh;
     position: absolute;
-    // background: url('../media/dti-background.png');
     transform-style: preserve-3d;
-    border:3px solid red;
+    // border:3px solid red;
   }
 
   .inner-1,
@@ -18,8 +17,8 @@
   .inner-4 {
     position:absolute;
     width: auto;
-    height:95%;
-    top:50%;
+    height:92%;
+    top:52%;
     left:50%;
     filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.8));
     opacity:.4;
