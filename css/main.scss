@@ -24,3 +24,15 @@ section{
   padding:28rem 0rem;
   position:relative;
 }
+
+footer{
+  @include caravel-regular();
+  
+  .footer-wrapper{
+    height:1px;
+    @include dotted-line();
+    padding:1rem 0 4rem 0;
+    text-align:right;
+  }
+  
+}
