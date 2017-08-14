@@ -4,18 +4,19 @@ $nav-height:100px;
 //Navigation
 nav{
   // border:1px solid red;
-  // box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
   z-index:900;
-  height:$nav-height;
   display: flex;
-  align-items: center;
-
+  align-items: flex-end;
+  background: #fff;
+  position:fixed;
+  width:100%;
+  
   .logo{
-    // border:1px solid green;
+    border:1px solid green;
     height:$nav-height;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-end;
     
     h3{
       font-size:25px;
@@ -36,14 +37,15 @@ nav{
     list-style: none;
     font-size: 15px;
     @include begum-semibold();
-    // border:1px solid blue;
+    border:1px solid blue;
     -webkit-padding-start: 0px;
     margin-bottom:0;
+
     
     .item-wrapper{
       height:$nav-height;
       display: flex;
-      align-items: center;
+      align-items:flex-end;
     }
 
     a li{
@@ -52,13 +54,13 @@ nav{
       transition:0.2s;
       position: relative;
       text-decoration: none;
-
-      
+    
       &:hover{
         // @include caravel-semibold();
         text-decoration: none;
         transition-duration: $transition-time;
       }
+      
     }
     
     .active{
@@ -76,6 +78,12 @@ nav{
       left:calc(50% - 3px);
     }
     
+  }
+  
+  .nav-divider{
+    height:1px;
+    @include dotted-line();
+    margin-top:3rem;
   }
 
 }
