@@ -11,16 +11,23 @@ nav{
   position:fixed;
   width:100%;
   
-  .logo{
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  
+  a.logo{
     // border:1px solid green;
     height:$nav-height;
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
     line-height: 1;
+    color:$black;
     
     h3{
-      font-size:23px;
+      font-size:24px;
       @include begum-bold();
       margin:0 0 0.7rem 0;
     }
@@ -28,8 +35,8 @@ nav{
     h4{
       margin:0;
       @include caravel-regular();
-      font-size: 16.5px;
-      letter-spacing: 0.03rem;
+      font-size: 17px;
+      letter-spacing: 0.04rem;
     }
     
   }
@@ -49,19 +56,12 @@ nav{
       display: flex;
       align-items:flex-end;
     }
-    
-    a{
-      &:hover{
-        text-decoration: none;
-      }
-    }
 
     a li{
       color:$black;
       line-height: 1;
       position: relative;
       text-decoration: none;
-      position:relative;
       
       &:hover:after{
         content:'';
