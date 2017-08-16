@@ -18,11 +18,16 @@ html, body{
   @include caravel-regular();
   color:#000;
   position:relative;
+  overflow-x: hidden;
 }
 
 section{
-  padding:28rem 0rem;
+  padding:18rem 0rem;
   position:relative;
+}
+
+img{
+  max-width:100%;
 }
 
 footer{

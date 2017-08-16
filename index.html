@@ -5,7 +5,7 @@ title: Home
 
 <section id="home">
   
-  <div class="outer-bg" data-tilt data-tilt-maxTilt="20" data-tilt-speed="1000" data-tilt-perspective="1500" data-tilt-transition="true" data-tilt-reset="false" data-tilt-easing="cubic-bezier(.03,.98,.52,.99)">
+  <div class="outer-bg">
     <img src="{{ site.baseurl}}/media/dti-1.png" class="inner-1">
     <img src="{{ site.baseurl}}/media/dti-2.png" class="inner-2">
     <img src="{{ site.baseurl}}/media/dti-3.png" class="inner-3">
@@ -21,7 +21,39 @@ title: Home
   $(document).ready(function() {
 
     $('nav').css("background", "transparent").css("box-shadow", "none");
+    
     $('footer').hide();
+    
+    // $('.outer-bg').tilt({
+    //   maxTilt: 20,
+    //   speed: 1000,
+    //   perspective: 1000,
+    //   transition: true,
+    //   reset: false,
+    //   easing: "cubic-bezier(.03,.98,.52,.99)",
+    // });
+    
+    
+    
+    
+    function imageTilt(){
+      if ($(window).width() > 767) {
+        $('.outer-bg').tilt({
+          maxTilt: 20,
+          speed: 1000,
+          perspective: 1300,
+          transition: true,
+          reset: false,
+          easing: "cubic-bezier(.03,.98,.52,.99)",
+        });
+      }else{
+
+      }
+    }
+    
+    imageTilt();
+    
+    $(window).resize(imageTilt);
   
   });
  
