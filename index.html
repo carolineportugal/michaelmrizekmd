@@ -24,18 +24,7 @@ title: Home
     
     $('footer').hide();
     
-    // $('.outer-bg').tilt({
-    //   maxTilt: 20,
-    //   speed: 1000,
-    //   perspective: 1000,
-    //   transition: true,
-    //   reset: false,
-    //   easing: "cubic-bezier(.03,.98,.52,.99)",
-    // });
-    
-    
-    
-    
+    // Image tilt function according to device
     function imageTilt(){
       if ($(window).width() > 767) {
         $('.outer-bg').tilt({
@@ -47,7 +36,10 @@ title: Home
           easing: "cubic-bezier(.03,.98,.52,.99)",
         });
       }else{
+        const tilt = $('.outer-bg').tilt();
 
+        // Destroy instance
+        tilt.tilt.destroy.call(tilt);
       }
     }
     
