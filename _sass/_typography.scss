@@ -1,4 +1,18 @@
 //Default values for typography
+h2{
+  @include begum-medium();
+  margin:0;
+}
+
+h3{
+  @include begum-semibold();
+  margin:0;
+}
+
+h4{
+  @include begum-bold();
+  margin:0;
+}
 
 p{
   @include caravel-regular();

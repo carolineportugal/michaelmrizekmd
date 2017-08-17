@@ -22,8 +22,21 @@ html, body{
 }
 
 section{
-  padding:18rem 0rem;
+  padding:14rem 0 0 0;
   position:relative;
+}
+
+.section-title-wrapper{
+
+}
+
+.title{
+  color:$link-color;
+}
+
+.divider{
+  @include dotted-line();
+  height:1px;
 }
 
 img{
@@ -31,15 +44,16 @@ img{
 }
 
 footer{
-  @include caravel-regular();
-  position:relative;
-  bottom:0;
   
   .footer-wrapper{
-    height:1px;
-    @include dotted-line();
-    padding:1rem 0 4rem 0;
+    margin-top:8rem;
+    @include caravel-regular();
+    padding-bottom:4rem;
     text-align:right;
+  }
+  
+  .footer-content{
+    padding-top:1rem;
   }
   
 }
