@@ -21,6 +21,12 @@ html, body{
   overflow-x: hidden;
 }
 
+.hidden-name {
+  position:absolute;
+  top:0;
+  left:-9999px;
+}
+
 .divider{
   @include dotted-line();
   height:1px;
@@ -40,7 +46,7 @@ section{
     color:$link-color;
   }
 
-  img{
+  .img-about{
     margin-top:7rem;
     max-width:100%;
   }
