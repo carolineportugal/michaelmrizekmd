@@ -19,6 +19,25 @@ html, body{
   color:$black;
   position:relative;
   overflow-x: hidden;
+  min-height:100%;
+}
+
+a:link{
+  color:$black;
+  text-decoration: underline;
+  transition: $transition-time;
+  
+  &:hover,
+  &:active {
+    opacity:1;
+    color:$link-color!important;
+  }
+  
+  &:visited {
+    opacity:1;
+    color:$black!important;
+  }
+  
 }
 
 .hidden-name {
@@ -34,6 +53,7 @@ html, body{
 }
 
 section{
+  min-height:calc(100vh - 141px); //so footer (141px is always at the bottom of the page)
   padding:13.5rem 0 0 0;
   position:relative;
   
@@ -63,6 +83,15 @@ footer{
   
   .footer-content{
     padding-top:1rem;
+  }
+  
+}
+
+#contact{
+  font-feature-settings: "onum" off;
+  
+  .item-bold{
+    @include begum-bold();
   }
   
 }
