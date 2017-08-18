@@ -16,31 +16,34 @@ html, body{
   @include font-smoothing();
   font-feature-settings: "onum" on;
   @include caravel-regular();
-  color:#000;
+  color:$black;
   position:relative;
   overflow-x: hidden;
-}
-
-section{
-  padding:14rem 0 0 0;
-  position:relative;
-}
-
-.section-title-wrapper{
-
-}
-
-.title{
-  color:$link-color;
 }
 
 .divider{
   @include dotted-line();
   height:1px;
+  opacity:.6;
 }
 
-img{
-  max-width:100%;
+section{
+  padding:13.5rem 0 0 0;
+  position:relative;
+  
+  .section-title-wrapper{
+    margin-bottom:3rem;
+  }
+
+  .section-title{
+    margin-bottom:1rem;
+    color:$link-color;
+  }
+
+  img{
+    margin-top:7rem;
+    max-width:100%;
+  }
 }
 
 footer{
@@ -48,7 +51,7 @@ footer{
   .footer-wrapper{
     margin-top:8rem;
     @include caravel-regular();
-    padding-bottom:4rem;
+    padding-bottom:3rem;
     text-align:right;
   }
   
