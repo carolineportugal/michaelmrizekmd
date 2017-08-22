@@ -67,6 +67,17 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxrjCxrCLIv3uSbtEtmIzvnzU
       icon: icon,
       animation: google.maps.Animation.DROP
     });
+    
+    //on map click opens map on new window
+    google.maps.event.addListener(map, 'click', function() {
+        window.open("https://www.google.com/maps/place/Dupont+Circle/@38.910179,-77.0464492,17z/data=!4m5!3m4!1s0x89b7b7c7d8bbe17b:0x8b28b73edb00d96b!8m2!3d38.910179!4d-77.0442552");
+    });
+    
+    //on marker click opens map on new window
+    google.maps.event.addListener(marker, 'click', function() {
+        window.open("https://www.google.com/maps/place/Dupont+Circle/@38.910179,-77.0464492,17z/data=!4m5!3m4!1s0x89b7b7c7d8bbe17b:0x8b28b73edb00d96b!8m2!3d38.910179!4d-77.0442552");
+    });
+    
   }
   
 </script>
