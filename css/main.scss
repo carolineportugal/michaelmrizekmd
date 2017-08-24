@@ -77,6 +77,20 @@ section{
     max-width: 100%;
   }
   
+  .item{
+  }
+  
+  .item-bold{
+    @include begum-bold();
+    text-transform: uppercase;
+    font-size:13px;
+    letter-spacing: 0.07rem;
+  }
+  
+  .no-lining{
+    font-feature-settings: "onum" off;
+  }
+  
 }
 
 footer{
@@ -90,15 +104,6 @@ footer{
   
   .footer-content{
     padding-top:1rem;
-  }
-  
-}
-
-#contact{
-  font-feature-settings: "onum" off;
-  
-  .item-bold{
-    @include begum-bold();
   }
   
 }
