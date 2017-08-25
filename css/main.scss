@@ -7,8 +7,8 @@
 @import "normalize";
 @import "fonts";
 @import "variables-mixins";
-@import "nav";
 @import "typography";
+@import "nav";
 @import "home";
 
 // General Code
@@ -20,6 +20,12 @@ html, body{
   position:relative;
   overflow-x: hidden;
   min-height:100%;
+}
+
+.hidden-name {
+  position:absolute;
+  top:0;
+  left:-9999px;
 }
 
 a:link{
@@ -40,10 +46,9 @@ a:link{
   
 }
 
-.hidden-name {
-  position:absolute;
-  top:0;
-  left:-9999px;
+ul{
+  list-style: none;
+  -webkit-padding-start: 0px;
 }
 
 .divider{

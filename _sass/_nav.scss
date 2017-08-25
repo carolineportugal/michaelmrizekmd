@@ -47,11 +47,9 @@ nav{
   }
 
   .menu{
-    list-style: none;
     font-size: 15.5px;
     @include begum-semibold();
     // border:1px solid blue;
-    -webkit-padding-start: 0px;
     margin-bottom:0;
     letter-spacing: 0.05rem;
     line-height: 1;

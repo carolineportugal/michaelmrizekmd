@@ -10,7 +10,7 @@ h4{
 
 }
 
-p{
+p, ul{
   @include caravel-regular();
   font-size:17px;
   line-height: 1.45;
