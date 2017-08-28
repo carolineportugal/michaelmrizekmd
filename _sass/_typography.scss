@@ -10,9 +10,21 @@ h4{
 
 }
 
-p, ul{
+p{
   @include caravel-regular();
   font-size:17px;
-  line-height: 1.45;
+  line-height: 1.5;
   margin-bottom:2.5rem;
+}
+
+ul{
+  @include begum-bold();
+  font-size:17px;
+  line-height: 1.45;
+  margin-bottom:3.5rem;
+  
+  li{
+    @include caravel-regular();
+    margin-top:.7rem;
+  }
 }

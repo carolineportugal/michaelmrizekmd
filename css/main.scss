@@ -82,14 +82,19 @@ section{
     max-width: 100%;
   }
   
-  .item{
+  .title-two{
+    @include begum-bold();
+    text-transform: uppercase;
+    font-size:14.5px;
+    letter-spacing: 0.06rem;
   }
   
   .item-bold{
-    @include begum-bold();
-    text-transform: uppercase;
-    font-size:13px;
-    letter-spacing: 0.07rem;
+    @include begum-regular-italic();
+  }
+  
+  .item-italic{
+    @include begum-regular-italic();
   }
   
   .no-lining{

@@ -61,10 +61,12 @@ nav{
     }
 
     a li{
+      @include begum-semibold();
       color:$black;
       line-height: 1;
       position: relative;
       text-decoration: none;
+      margin-top:0;
       
       &:hover:after{
         content:'';
