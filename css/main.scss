@@ -89,8 +89,8 @@ section{
     letter-spacing: 0.06rem;
   }
   
-  .item-bold{
-    @include begum-regular-italic();
+  .item-bold-italic{
+    @include begum-medium-italic();
   }
   
   .item-italic{
