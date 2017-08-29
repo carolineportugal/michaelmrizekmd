@@ -13,12 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Estúdio Porto
-email: estudioportodc@gmail.com
-description: Estúdio Porto is Caroline Portugal. I'm a Design Technologist based in Washington, DC. I design and build digital products.
-# baseurl: "/estudioporto" # the subpath of your site, e.g. /blog
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://estudioporto.com" # the base hostname & protocol for your site
+title: Michael Mrizek MD
+email: michaelmrizekmd@gmail.com
+description: Dr. Michael Mrizek, M.D. is a Psychiatrist & Psychotherapist based in Washington, DC.
+baseurl: "/michaelmrizekmd" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
