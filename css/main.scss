@@ -28,20 +28,20 @@ html, body{
   left:-9999px;
 }
 
-a:link{
+a, a:link{
   color:$black;
   text-decoration: underline;
   transition: $transition-time;
+  
+  &:visited {
+    opacity:1;
+    color:$black!important;
+  }
   
   &:hover,
   &:active {
     opacity:1;
     color:$link-color!important;
-  }
-  
-  &:visited {
-    opacity:1;
-    color:$black!important;
   }
   
 }
