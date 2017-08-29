@@ -6,10 +6,6 @@ h3{
   font-size:21px;
 }
 
-h4{
-
-}
-
 p{
   @include caravel-regular();
   font-size:17px;
@@ -18,13 +14,13 @@ p{
 }
 
 ul{
-  @include begum-bold();
-  font-size:16.5px;
-  line-height: 1.35;
   margin-bottom:3.5rem;
   
   li{
+    font-size:16.5px;
+    line-height: 1.35;
     @include caravel-regular();
     margin-top:.7rem;
   }
+  
 }
