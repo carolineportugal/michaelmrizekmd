@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Michael Mrizek MD
+title: Michael Mrizek, M.D.
 email: michaelmrizekmd@gmail.com
 description: Dr. Michael Mrizek, M.D. is a Psychiatrist & Psychotherapist based in Washington, DC.
 baseurl: "/michaelmrizekmd" # the subpath of your site, e.g. /blog
