@@ -28,7 +28,7 @@ html, body{
   left:-9999px;
 }
 
-a, a:link{
+a:link, a {
   color:$black;
   text-decoration: underline;
   transition: $transition-time;
