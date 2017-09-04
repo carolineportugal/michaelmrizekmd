@@ -7,7 +7,7 @@ title: Home
   
   <h3 class="hidden-name">Home</h3>
   
-  <div class="outer-bg">
+  <div class="outer-bg" data-tilt>
     <img src="{{ site.baseurl}}/media/dti-1.png" class="inner-1">
     <img src="{{ site.baseurl}}/media/dti-2.png" class="inner-2">
     <img src="{{ site.baseurl}}/media/dti-3.png" class="inner-3">
@@ -21,11 +21,11 @@ title: Home
 <script>
 
   $(document).ready(function() {
-
+  
     $('nav').css("background", "transparent").css("box-shadow", "none");
-    
+  
     $('footer').hide();
-    
+  
     // Image tilt function according to device
     function imageTilt(){
       if ($(window).width() > 767) {
@@ -35,18 +35,18 @@ title: Home
           perspective: 1300,
           transition: true,
           reset: false,
-          easing: "cubic-bezier(.03,.98,.52,.99)",
+          easing: "cubic-bezier(.03,.98,.52,.99)"
         });
       }else{
         const tilt = $('.outer-bg').tilt();
-
+  
         // Destroy instance
         tilt.tilt.destroy.call(tilt);
       }
     }
-    
+  
     imageTilt();
-    
+  
     $(window).resize(imageTilt);
   
   });

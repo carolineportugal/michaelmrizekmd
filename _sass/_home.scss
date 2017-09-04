@@ -8,7 +8,7 @@
     min-height:100vh;
     position: relative;
     transform-style: preserve-3d;
-    // border:3px solid red;
+    border:3px solid red;
   }
 
   .inner-1,
@@ -26,19 +26,19 @@
   
   .inner-1{
     transform: translate(-50%, -50%) translateZ(200px);
-    // border:3px solid orange;
+    border:3px solid orange;
   }
   .inner-2{
     transform: translate(-50%, -50%) translateZ(150px);
-    // border:3px solid blue;
+    border:3px solid blue;
   }
   .inner-3{
     transform: translate(-50%, -50%) translateZ(100px);
-    // border:3px solid yellow;
+    border:3px solid yellow;
   }
   .inner-4{
     transform: translate(-50%, -50%) translateZ(50px);
-    // border:3px solid green;
+    border:3px solid green;
     filter: none;
   }
 
