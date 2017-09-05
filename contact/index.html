@@ -7,14 +7,8 @@ title: Contact
   <div class="container">
 
     <div class="row">
-      
-      <div class="col-sm-4 col-sm-offset-1">
-        
-        <div id="map"></div>
 
-      </div>
-
-      <div class="col-sm-6 col-sm-offset-0">
+      <div class="col-sm-6 col-sm-offset-0 col-sm-push-5">
         <div>
           <div class="section-title-wrapper">
             <h3 class="section-title">Contact</h3>
@@ -30,6 +24,10 @@ title: Contact
           
           <p class="no-lining"><span class="item-title">Address</span><br>Office is located in the Dupont Circle area of Washington, DC.</p>
         </div>
+      </div>
+      
+      <div class="col-sm-4 col-sm-offset-1 col-sm-pull-6">
+        <div id="map"></div>
       </div>
 
     </div>
@@ -82,6 +80,13 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxrjCxrCLIv3uSbtEtmIzvnzU
         window.open("https://www.google.com/maps/place/Dupont+Circle/@38.910179,-77.0464492,17z/data=!4m5!3m4!1s0x89b7b7c7d8bbe17b:0x8b28b73edb00d96b!8m2!3d38.910179!4d-77.0442552");
     });
     
+    //on map resize keeps center of map (location) always in the center
+    google.maps.event.addDomListener(window, "resize", function() {
+      var center = map.getCenter();
+      google.maps.event.trigger(map, "resize");
+      map.setCenter(center);
+    });
+    
   }
-  
+    
 </script>
