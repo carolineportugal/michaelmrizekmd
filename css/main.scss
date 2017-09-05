@@ -59,7 +59,7 @@ ul{
 
 section{
   min-height:calc(100vh - 141px); //so footer (141px is always at the bottom of the page)
-  padding:13.5rem 0 0 0;
+  padding:13rem 0 0 0;
   position:relative;
   
   .section-title-wrapper{
@@ -72,7 +72,14 @@ section{
   }
 
   .img-left{
-    max-width:100%;
+    margin: 0 auto;
+    margin-bottom:4rem;
+    max-width:360px;
+    
+    img{
+      max-width:100%;
+    }
+    
   }
   
   #map{
@@ -113,8 +120,18 @@ footer{
   
 }
 
+@media (max-width: 991px) {
+  
+  section{
+    padding:12rem 0 0 0;
+  }
+  
+}
+
 @media (max-width: 767px) {
   
-
+  section{
+    padding:11rem 0 0 0;
+  }
   
 }
