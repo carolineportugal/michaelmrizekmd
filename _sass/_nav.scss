@@ -36,7 +36,7 @@ nav{
     }
     
     .logo-title{
-      font-size:24px;
+      font-size:23px;
       @include begum-bold();
       margin:0 0 0.7rem 0;
     }
@@ -44,7 +44,7 @@ nav{
     .logo-subtitle{
       margin:0;
       @include caravel-regular();
-      font-size: 17px;
+      font-size: 16px;
       letter-spacing: 0.04rem;
     }
     
@@ -57,6 +57,8 @@ nav{
     margin-bottom:0;
     letter-spacing: 0.05rem;
     line-height: 1;
+    display: flex;
+    justify-content: space-between;
     
     .item-wrapper{
       height:$nav-height;
@@ -108,4 +110,16 @@ nav{
     margin-top:1.5rem;
   }
 
+}
+
+@media (max-width: 767px) {
+  
+  nav{
+    
+    .menu{
+      display:none;
+    }
+    
+  }
+  
 }
