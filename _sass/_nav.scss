@@ -39,16 +39,16 @@ nav{
       }
       
       .logo-title{
-        font-size:23.5px;
+        font-size:23px;
         @include begum-bold();
-        margin:0 0 0.7rem 0;
+        margin:0 0 0.6rem 0;
       }
       
       .logo-subtitle{
         margin:0;
         @include caravel-regular();
         font-size: 16.5px;
-        letter-spacing: 0.04rem;
+        letter-spacing: 0.03rem;
       }
       
     }
@@ -75,7 +75,7 @@ nav{
     }
 
     a li{
-      font-size:15.5px;
+      font-size:16px;
       @include begum-semibold();
       color:$black;
       line-height: 1;
