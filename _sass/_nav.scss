@@ -32,13 +32,14 @@ nav{
       justify-content:center;
       line-height: 1;
       color:$black;
+      padding-top:2px;
       
       &:hover{
         color:$black !important;
       }
       
       .logo-title{
-        font-size:23px;
+        font-size:22.5px;
         @include begum-bold();
         margin:0 0 0.7rem 0;
       }
@@ -127,15 +128,15 @@ nav{
     .logo-wrapper{
       
       a.logo{
-        height:$nav-height;
+        height:75px;
         
         .logo-title{
-          font-size:23px;
-          margin:0 0 0.7rem 0;
+          font-size:21px;
+          margin:0 0 0.6rem 0;
         }
         
         .logo-subtitle{
-          font-size: 16px;
+          font-size: 15px;
           letter-spacing: 0.04rem;
         }
         
