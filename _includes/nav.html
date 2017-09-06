@@ -27,26 +27,30 @@
             <a href="{{ site.baseurl}}/contact/" class="{% if page.url == '/contact/' %}active{% endif %}"><li>Contact</li></a>
           </div>
         </ul>
-        <button type="button" class="btn btn-link navbar-toggle collapsed" data-toggle="modal" data-target="#menuModal"> ... </button>
+        <button type="button" class="btn-link navbar-toggle collapsed" data-toggle="modal" data-target="#menuModal">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
       </div>
                       
     </div>
   </div>
   
   <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
-  <div class="modal fade fullscreen" id="menuModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fullscreen" id="menuModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content" style="color:#fff;">
         <div class="modal-header" style="border:0;">
-            <button type="button" class="close btn btn-link" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close fa-lg" style="color:#999;"></i></button>
-            <!-- <h4 class="modal-title text-center"><span class="sr-only">main navigation</span></h4> -->
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </button>
         </div>
         <div class="modal-body text-center">
           <ul style="list-style-type:none;">
-            <li><a href="#" class="big">Practice</a></li>
-            <li><a href="#" class="big">About</a></li>
-            <li><a href="#" class="big">Credentials</a></li>
-            <li><a href="#" class="big">Contact</a></li>
+            <li><a href="{{ site.baseurl }}/" class="big">Home</a></li>
+            <li><a href="{{ site.baseurl}}/practice/" class="big">Practice</a></li>
+            <li><a href="{{ site.baseurl}}/about/" class="big">About</a></li>
+            <li><a href="{{ site.baseurl}}/credentials/" class="big">Credentials</a></li>
+            <li><a href="{{ site.baseurl}}/contact/" class="big">Contact</a></li>
           </ul>
         </div>
       </div><!-- /.modal-content -->

@@ -126,6 +126,11 @@ nav{
 
 /* FULL SCREEN MODAL STYLES
 -------------------------------------------------- */
+.modal-backdrop{
+  display: none;
+  visibility: hidden;
+}
+
 .fullscreen .modal-dialog {
  margin: 0 0 0 0;
  width: 100%;
