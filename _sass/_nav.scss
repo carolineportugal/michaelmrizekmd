@@ -5,8 +5,6 @@ $nav-height:80px;
 nav{
   // border:1px solid red;
   z-index:900;
-  display: flex;
-  align-items: center;
   background: rgba(255,255,255,.95);
   position:fixed;
   width:100%;
@@ -22,32 +20,42 @@ nav{
     }
   }
   
-  a.logo{
-    // border:1px solid green;
-    height:$nav-height;
+  .logo-wrapper{
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    line-height: 1;
-    color:$black;
-    
-    &:hover{
-      color:$black !important;
+    justify-content: space-between;
+  
+    a.logo{
+      // border:1px solid green;
+      height:$nav-height;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      line-height: 1;
+      color:$black;
+      
+      &:hover{
+        color:$black !important;
+      }
+      
+      .logo-title{
+        font-size:23px;
+        @include begum-bold();
+        margin:0 0 0.7rem 0;
+      }
+      
+      .logo-subtitle{
+        margin:0;
+        @include caravel-regular();
+        font-size: 16px;
+        letter-spacing: 0.04rem;
+      }
+      
     }
     
-    .logo-title{
-      font-size:23px;
-      @include begum-bold();
-      margin:0 0 0.7rem 0;
+    button {
+      display:none;
     }
-    
-    .logo-subtitle{
-      margin:0;
-      @include caravel-regular();
-      font-size: 16px;
-      letter-spacing: 0.04rem;
-    }
-    
+  
   }
 
   .menu{
@@ -109,23 +117,59 @@ nav{
     @include dotted-line();
     margin-top:1.5rem;
   }
+
+}
+
+@media (max-width: 767px) {
   
-  @media (max-width: 767px) {
+  nav{
+    
+    .logo-wrapper{
+      
+      a.logo{
+        height:$nav-height;
+        
+        .logo-title{
+          font-size:23px;
+          margin:0 0 0.7rem 0;
+        }
+        
+        .logo-subtitle{
+          font-size: 16px;
+          letter-spacing: 0.04rem;
+        }
+        
+      }
+      
+      button {
+        display: block;
+        font-size: 21px;
+        text-shadow: none;
+        outline:0;
+        border:0;
+        background: none;
+        padding:0;
+        
+        &:hover{
+          opacity:.5;
+        }
+        
+      }
+      
+    }
         
     .menu{
       display:none;
     }
-        
+  
   }
-
+      
 }
 
 
-/* FULL SCREEN MODAL STYLES
--------------------------------------------------- */
-.modal-backdrop{
-  display: none;
-  visibility: hidden;
+//Fullscreen bootstrap mobile nav (.fullscreen)
+.modal{
+  padding-right:0 !important;
 }
 
 .fullscreen{
@@ -142,47 +186,64 @@ nav{
    height: 100%;
    min-height: 100%;
    border-radius: 0;
-   background: rgba(255, 255, 255, 0.94);
+   background: rgba(255, 255, 255, 0.95);
    overflow:auto;
+   border:0;
   }
   
   .modal-header{
     border:0;
+    
+    .close {
+      margin-top:5px;
+      font-size: 27px;
+      text-shadow: none;
+      opacity: .2;
+      outline:0;
+      
+      &:hover{
+        opacity:.5;
+      }
+      
+    }
+    
   }
   
   .modal-body{
     
     ul {
-     padding: 100px 0 0 0;
+     padding: 80px 0 0 0;
     }
     
     li {
      padding: 10px 0 10px 0 ;
     }
     
+    a {
+     font-size: 300%;
+    }
+    
   }
   
-}
+  @media (max-width: 480px){
+    
+    .modal-body{
+      
+      ul {
+        padding: 30px 0 0 0;
+        overflow: auto;
+      }
 
+      li {
+        padding: 4px 0 4px 0 ;
+      }
 
-
-.fullscreen .modal-body a {
- color: #333;
- font-size: 300%;
-}
-
-@media (max-width: 480px){
- .fullscreen .modal-body ul {
-   padding: 30px 0 0 0;
-   overflow: auto;
- }
-
- .fullscreen .modal-body li {
-   padding: 4px 0 4px 0 ;
- }
-
- .fullscreen .modal-body a {
-   color: #333;
-   font-size: 200%;
- }
+      a {
+        font-size: 200%;
+      }
+    
+    }
+  
+  }
+  
 }

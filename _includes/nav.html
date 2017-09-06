@@ -6,10 +6,15 @@
     <div class="row">
             
       <div class="col-sm-5 col-md-4">
-        <a href="{{ site.baseurl }}/" class="logo">
-          <div class="logo-title">Michael Mrizek, M.D.</div>
-          <div class="logo-subtitle">Psychiatrist & Psychotherapist</div>
-        </a>
+        <div class="logo-wrapper">
+          <a href="{{ site.baseurl }}/" class="logo">
+            <div class="logo-title">Michael Mrizek, M.D.</div>
+            <div class="logo-subtitle">Psychiatrist & Psychotherapist</div>
+          </a>
+          <button type="button" data-toggle="modal" data-target="#menuModal">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </button>
+        </div>
       </div>
       
       <div class="col-sm-7 col-md-6 col-md-offset-1">
@@ -27,16 +32,13 @@
             <a href="{{ site.baseurl}}/contact/" class="{% if page.url == '/contact/' %}active{% endif %}"><li>Contact</li></a>
           </div>
         </ul>
-        <button type="button" class="btn-link navbar-toggle collapsed" data-toggle="modal" data-target="#menuModal">
-          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        </button>
       </div>
                       
     </div>
   </div>
   
   <!-- Fullscreen bootstrap mobile nav (.fullscreen) -->
-  <div class="modal fullscreen" id="menuModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fullscreen" data-backdrop="false" tabindex="-1" id="menuModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -46,11 +48,11 @@
         </div>
         <div class="modal-body text-center">
           <ul>
-            <li><a href="{{ site.baseurl }}/" class="">Home</a></li>
-            <li><a href="{{ site.baseurl}}/practice/" class="big">Practice</a></li>
-            <li><a href="{{ site.baseurl}}/about/" class="big">About</a></li>
-            <li><a href="{{ site.baseurl}}/credentials/" class="big">Credentials</a></li>
-            <li><a href="{{ site.baseurl}}/contact/" class="big">Contact</a></li>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="{{ site.baseurl}}/practice/">Practice</a></li>
+            <li><a href="{{ site.baseurl}}/about/">About</a></li>
+            <li><a href="{{ site.baseurl}}/credentials/">Credentials</a></li>
+            <li><a href="{{ site.baseurl}}/contact/">Contact</a></li>
           </ul>
         </div>
       </div><!-- /.modal-content -->
