@@ -183,7 +183,7 @@ nav{
     
     .close {
       margin-top:5px;
-      font-size: 27px;
+      font-size: 29px;
       text-shadow: none;
       opacity: .2;
       outline:0;
@@ -203,7 +203,9 @@ nav{
     }
     
     li {
-     padding: 10px 0 10px 0 ;
+     padding: 10px 0 10px 0;
+     @include begum-semibold();
+
     }
     
     a {
@@ -217,7 +219,7 @@ nav{
     .modal-body{
       
       ul {
-        padding: 30px 0 0 0;
+        padding: 25px 0 0 0;
         overflow: auto;
       }
 
