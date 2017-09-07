@@ -65,7 +65,7 @@
 
 // Removes double tap on links from iPad
 $(document).ready(function() {
-  $(".single-click-on-mobile").on("click touchend", function(e) {
+  $("a .single-click-on-mobile").on("click touchend", function(e) {
     var el = $(this);
     var link = el.attr("href");
     window.location = link;
