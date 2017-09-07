@@ -205,11 +205,15 @@ nav{
     li {
      padding: 10px 0 10px 0;
      @include begum-semibold();
-
     }
     
     a {
      font-size: 290%;
+     
+      &:active{
+       color:$link-color!important;
+      }
+     
     }
     
   }
