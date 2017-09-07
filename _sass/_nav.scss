@@ -72,6 +72,7 @@ nav{
       height:$nav-height;
       display: flex;
       align-items:center;
+      padding-top:5px;
     }
 
     a li{
@@ -90,7 +91,7 @@ nav{
         width:6px;
         height:6px;
         border-radius:50%;
-        top:-11px;
+        top:-14px;
         left:calc(50% - 3px);
       }
       
@@ -107,7 +108,7 @@ nav{
       width:6px;
       height:6px;
       border-radius:50%;
-      top:-11px;
+      top:-14px;
       left:calc(50% - 3px);
     }
     
