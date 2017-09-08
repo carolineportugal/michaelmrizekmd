@@ -5,10 +5,20 @@
   
   .outer-bg{
     width: 100%;
-    min-height:100vh;
-    position: relative;
+    height:100vh;
     transform-style: preserve-3d;
     border:3px solid red;
+    display:flex;
+    justify-content: center;
+  }
+  
+  .inner-wrapper{
+    position: relative;
+    // top:50%;
+    // left:50%;
+    border:3px solid cyan;
+    width:500px;
+
   }
 
   .inner-1,
@@ -16,28 +26,25 @@
   .inner-3,
   .inner-4 {
     position:absolute;
-    width: auto;
-    height:92%;
-    top:52%;
-    left:50%;
+    max-width: 100%;
     filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.8));
     opacity:.4;
   }
   
   .inner-1{
-    transform: translate(-50%, -50%) translateZ(200px);
+    transform: translateZ(200px);
     border:3px solid orange;
   }
   .inner-2{
-    transform: translate(-50%, -50%) translateZ(150px);
+    transform: translateZ(150px);
     border:3px solid blue;
   }
   .inner-3{
-    transform: translate(-50%, -50%) translateZ(100px);
+    transform: translateZ(100px);
     border:3px solid yellow;
   }
   .inner-4{
-    transform: translate(-50%, -50%) translateZ(50px);
+    transform: translateZ(50px);
     border:3px solid green;
     filter: none;
   }
