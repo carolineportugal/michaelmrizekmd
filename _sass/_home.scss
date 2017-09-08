@@ -40,5 +40,16 @@
     // border:3px solid green;
     filter: none;
   }
+  
+  @media (max-width: 768px) {
+    
+    .inner-1,
+    .inner-2,
+    .inner-3,
+    .inner-4 {
+      top:50%;
+    }
+    
+  }
 
 }
