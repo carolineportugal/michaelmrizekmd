@@ -6,6 +6,14 @@ h3{
   font-size:23px;
 }
 
+h4{
+  @include begum-bold();
+  text-transform: uppercase;
+  font-size:14.5px;
+  letter-spacing: 0.06rem;
+  margin-bottom:5px;
+}
+
 p{
   @include caravel-regular();
   font-size:17.5px;
@@ -14,13 +22,33 @@ p{
 }
 
 ul{
-  margin-bottom:4rem;
+  margin-bottom:2.5rem;
+  font-size:17.5px;
+  line-height: 1.45;
+  @include caravel-regular();
   
   li{
-    font-size:17px;
-    line-height: 1.3;
-    @include caravel-regular();
-    margin-top:1.4rem;
+    // margin-top:1.4rem;
   }
   
+}
+
+#credentials{
+
+  ul{
+    margin-bottom:4rem;
+    
+    li{
+      font-size:17px;
+      line-height: 1.3;
+      @include caravel-regular();
+      margin-top:1.4rem;
+    }
+    
+    li:first-of-type{
+      margin-top:1.8rem;
+    }
+    
+  }
+
 }
