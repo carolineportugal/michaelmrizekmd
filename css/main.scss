@@ -29,18 +29,18 @@ html, body{
 }
 
 a:link, a {
-  color:$black;
+  color:$link-color;
   text-decoration: underline;
   transition: $transition-time;
   
   &:visited {
     opacity:1;
-    color:$black!important;
+    color:$link-color!important;
   }
   
   &:hover,
   &:active {
-    opacity:1;
+    opacity:.8;
     color:$link-color!important;
   }
   
