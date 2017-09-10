@@ -9,28 +9,45 @@ h3{
 h4{
   @include begum-bold();
   text-transform: uppercase;
-  font-size:14.5px;
-  letter-spacing: 0.06rem;
+  font-size:15px;
+  letter-spacing: 0.1rem;
   margin-bottom:5px;
 }
 
 p{
   @include caravel-regular();
   font-size:17.5px;
-  line-height: 1.45;
-  margin-bottom:2.5rem;
+  line-height: 1.5;
+  margin-bottom:2.8rem;
 }
 
 ul{
-  margin-bottom:2.5rem;
+  margin-bottom:2.8rem;
   font-size:17.5px;
-  line-height: 1.45;
+  line-height: 1.5;
   @include caravel-regular();
   
   li{
-    // margin-top:1.4rem;
   }
   
+  li:first-of-type{
+    margin-top:1.8rem;
+  }
+  
+}
+
+#practice{
+
+  ul{
+    list-style:square;
+
+    
+    li{
+      margin-left:50px;
+    }
+    
+  }
+
 }
 
 #credentials{
@@ -43,10 +60,6 @@ ul{
       line-height: 1.3;
       @include caravel-regular();
       margin-top:1.4rem;
-    }
-    
-    li:first-of-type{
-      margin-top:1.8rem;
     }
     
   }
