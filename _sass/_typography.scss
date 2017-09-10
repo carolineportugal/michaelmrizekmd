@@ -40,10 +40,17 @@ ul{
 
   ul{
     list-style:square;
-
     
     li{
-      margin-left:15px;
+      margin-left:50px;
+    }
+    
+    @media (max-width: 767px) {
+      
+      li{
+        margin-left:15px;
+      }
+      
     }
     
   }

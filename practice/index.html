@@ -79,17 +79,14 @@ title: Practice
 
   $(document).ready(function() {
     
+    // Hides 'Read More' when collapse is open
     $('.collapse-link').click(function() {
-        if ($.trim($(this).text()) === '(...) Read More.') {
-            $(this).hide();
-        } else {
-            $(this).text('(...) Read More.');
-        }
+      $(this).hide();
     });
     
+    //Scrolls slowly to top of the page
     $(".back-top").click(function(event) {
       event.preventDefault();
-      /*scrolls to top*/
       $("html, body").animate({scrollTop:$("#practice").offset().top}, "slow");
     });
     
