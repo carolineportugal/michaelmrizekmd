@@ -22,6 +22,20 @@ html, body{
   min-height:100%;
 }
 
+html:after,
+body:after{
+  content: "";
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  @include gradient-bg;
+  z-index:-1;
+  opacity:.08;
+}
+
+
 .hidden-name {
   position:absolute;
   top:0;
