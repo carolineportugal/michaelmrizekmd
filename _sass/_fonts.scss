@@ -1,61 +1,7 @@
-//Embed Fonts
-
-// @font-face{
-//   font-family:"Sommet Heavy Italic";
-//   src: url('../fonts/sommet-heavy-italic.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Heavy";
-//   src: url('../fonts/sommet-heavy.otf');
-// }
-
 //Font Mixins
-
-@mixin caravel-light {
-  font-family: "Caravel Light", sans-serif;
-	font-weight: normal;
-	font-style: normal;
-}
 
 @mixin caravel-regular {
   font-family: "Caravel-Regular", sans-serif;
-	font-weight: normal;
-	font-style: normal;
-}
-
-@mixin caravel-medium {
-  font-family: "Caravel Medium", sans-serif;
-	font-weight: normal;
-	font-style: normal;
-}
-
-@mixin caravel-semibold {
-  font-family: "Caravel Semibold", sans-serif;
-	font-weight: normal;
-	font-style: normal;
-}
-
-@mixin caravel-bold {
-  font-family: "Caravel Bold", sans-serif;
-	font-weight: normal;
-	font-style: normal;
-}
-
-@mixin begum-light {
-  font-family: "Begum Light", serif;
-	font-weight: normal;
-	font-style: normal;
-}
-
-@mixin begum-light-italic {
-  font-family: "Begum Light Italic", serif;
-	font-weight: normal;
-	font-style: normal;
-}
-
-@mixin begum-regular {
-  font-family: "Begum Regular", serif;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -66,38 +12,14 @@
 	font-style: normal;
 }
 
-@mixin begum-medium {
-  font-family: "Begum Medium", serif;
-	font-weight: normal;
-	font-style: normal;
-}
-
-@mixin begum-medium-italic {
-  font-family: "Begum Medium Italic", serif;
-	font-weight: normal;
-	font-style: normal;
-}
-
 @mixin begum-semibold {
   font-family: "Begum-Semibold", serif;
 	font-weight: normal;
 	font-style: normal;
 }
 
-@mixin begum-semibold-italic{
-  font-family: "Begum Semibold Italic", serif;
-	font-weight: normal;
-	font-style: normal;
-}
-
 @mixin begum-bold {
   font-family: "Begum-Bold", serif;
-	font-weight: normal;
-	font-style: normal;
-}
-
-@mixin begum-bold-italic {
-  font-family: "Begum Bold Italic", serif;
 	font-weight: normal;
 	font-style: normal;
 }
