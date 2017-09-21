@@ -21,12 +21,16 @@ title: Home
 
 <script>
 
-  $(window).on('load', function(){
-  
+  $(document).ready(function() {
+
     $('nav').css("background", "transparent").css("box-shadow", "none");
+
+    $('footer').css("display", "none");
   
-    $('footer').hide();
-  
+  });
+
+  $(window).on('load', function(){
+      
     // Image tilt function according to device
     function imageTilt(){
       if ($(window).width() > 767) {
