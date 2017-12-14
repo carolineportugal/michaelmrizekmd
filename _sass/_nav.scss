@@ -1,5 +1,5 @@
 //Navigation variables
-$nav-height:80px;
+$nav-height:70px;
 
 //Navigation
 nav{
@@ -34,20 +34,21 @@ nav{
       justify-content:center;
       line-height: 1;
       color:$black!important;
-      padding-top:4px;
+      padding-top:2px;
       position:relative;
       
       .logo-title{
-        font-size:22px;
+        font-size:20.5px;
         @include begum-bold();
         margin:0 0 0.5rem 0;
+        letter-spacing: 0.01rem;
       }
       
       .logo-subtitle{
         margin:0;
         @include caravel-regular();
-        font-size: 16px;
-        letter-spacing: 0.025rem;
+        font-size: 15.5px;
+        letter-spacing: 0.015rem;
       }
       
     }
@@ -111,12 +112,6 @@ nav{
       left:calc(50% - 3px);
     }
     
-  }
-  
-  .nav-divider{
-    height:1px;
-    @include dotted-line();
-    margin-top:1.5rem;
   }
 
 }
