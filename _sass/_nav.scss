@@ -1,5 +1,5 @@
 //Navigation variables
-$nav-height:80px;
+$nav-height:70px;
 
 //Navigation
 nav{
@@ -34,20 +34,21 @@ nav{
       justify-content:center;
       line-height: 1;
       color:$black!important;
-      padding-top:4px;
+      padding-top:2px;
       position:relative;
       
       .logo-title{
-        font-size:22px;
+        font-size:20.5px;
         @include begum-bold();
         margin:0 0 0.5rem 0;
+        letter-spacing: 0.01rem;
       }
       
       .logo-subtitle{
         margin:0;
         @include caravel-regular();
         font-size: 16px;
-        letter-spacing: 0.025rem;
+        letter-spacing: 0.015rem;
       }
       
     }
@@ -112,12 +113,6 @@ nav{
     }
     
   }
-  
-  .nav-divider{
-    height:1px;
-    @include dotted-line();
-    margin-top:1.5rem;
-  }
 
 }
 
@@ -129,7 +124,7 @@ nav{
       
       button {
         display: block;
-        font-size: 23px;
+        font-size: 22px;
         text-shadow: none;
         outline:0;
         border:0;
@@ -193,7 +188,7 @@ nav{
     
     .close {
       margin-top:5px;
-      font-size: 30px;
+      font-size: 28px;
       text-shadow: none;
       opacity: .2;
       outline:0;
@@ -219,7 +214,7 @@ nav{
     }
     
     a {
-     font-size: 220%;
+     font-size: 210%;
      
     }
     
@@ -239,7 +234,7 @@ nav{
       }
 
       a {
-        font-size: 190%;
+        font-size: 180%;
       }
     
     }
