@@ -53,8 +53,9 @@ title: Practice
           <h4>Approach</h4>
           <br>
           <p>In my practice, I use a biopsychosocial perspective to understand each individual and convey a treatment plan. The biopsychosocial perspective is a way of understanding a person based on three indispensable and interactive domains: <i>biological</i>, <i>psychological</i> and a person’s <i>social</i> milieu—this enables me to formulate a treatment plan that is specific for the needs of each individual. While approaching everyone with these domains in mind, I aim to never lose sight of each individual’s human experiences and particular needs.</p>
-          
+                    
           <div class="collapse" id="collapseExample">
+            <div>
             <p>The <i>'bio'</i> component examines aspects of biology that are influencing health. These might include aspects of the neurobiology of the brain, malfunctioning of major body systems (e.g., nervous and endocrine systems), genetic predispositions, biological rhythms (such as sleep-wake cycle and nutrition) and medical conditions that interact with brain function and state. For instance, it is widely known how anemia or hypothyroidism might mimic depression, and how genetic predisposition or a history of brain injury may cause mood alterations.</p>
             <p>To evaluate these biological contributors to your current experience, I will start by learning about your medical history and may require laboratory or (rarely) brain imaging. A constant awareness of the milieu of brain/body is an important and ongoing part of my understanding of a person.</p>
             <p>The <i>‘psycho’</i> component examines aspects of an individual’s psychology that may be affecting their well-being. Given the complex task of understanding a person’s personality, landscape of thought, motivations, etc, using a theory of mind is an indispensable way to structure the process and provide direction for treatment. In my experience, the most efficient theory of mind is the <a href="https://en.wikipedia.org/wiki/Psychoanalytic_theory" target="_blank">Psychoanalytic Theory</a>, started by Freud but advanced by many others (many aspects of this theory have been backed by modern neuroscience). This theory emphasizes the importance of developmental influences, such as family of origin, in creating unconscious constructs of interaction that influence our relationships and internal experiences throughout our life.</p>
@@ -63,6 +64,7 @@ title: Practice
             <p>The <i>‘social’</i> component examines a wide range of social factors that might be affecting an individual's health, and might include: religion, culture, socioeconomic status, quality of relationships, etc. Since social/interpersonal interactions (relationships) are the core of the human experience, they have direct impact on an individual’s psychology, brain and physiology. And because so much of our lives are driven by the need and/or avoidance of social interactions, the social component is commonly the instigating drive toward seeking psychiatric treatment.</p>
             <p>The brain, and our psychology, only operate as part of its environment. Understanding the power of social interactions and environmental influences is key to providing appropriate treatment.</p>
             <p><a class="back-top" data-toggle="collapse" href="#collapseExample">&#8593; Back to Top</a></p>
+            </div>
           </div>
           
           <p><a class="collapse-link" data-toggle="collapse" href="#collapseExample">(...) Read More</a></p>
@@ -81,7 +83,9 @@ title: Practice
       
     //'Read More' gets hidden when collapse is open
     $('.collapse-link').click(function() {
-      $('.collapse-link').hide();
+      $('.collapse').on('shown.bs.collapse', function () {
+        $('.collapse-link').hide();
+      });
     });
 
     //Scrolls slowly to top of the page
