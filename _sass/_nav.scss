@@ -130,11 +130,6 @@ nav{
         border:0;
         background: none;
         padding:0;
-        
-        &:hover{
-          opacity:.5;
-        }
-        
       }
       
     }
@@ -190,13 +185,8 @@ nav{
       margin-top:5px;
       font-size: 28px;
       text-shadow: none;
-      opacity: .2;
+      opacity: 1;
       outline:0;
-      
-      &:hover{
-        opacity:.5;
-      }
-      
     }
     
   }
