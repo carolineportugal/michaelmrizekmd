@@ -17,7 +17,7 @@ title: Michael Mrizek, M.D.
 email: michaelmrizekmd@gmail.com
 description: Dr. Michael Mrizek, M.D. is a Psychiatrist & Psychotherapist based in Washington, DC.
 # baseurl: "/michaelmrizekmd" # the subpath of your site, e.g. /blog
-url: "http://michaelmrizekmd.com" # the base hostname & protocol for your site
+url: "https://michaelmrizekmd.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
