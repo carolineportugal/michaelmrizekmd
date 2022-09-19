@@ -73,7 +73,7 @@ ul{
 
 section{
   min-height:calc(100vh - 141px); //so footer (141px is always at the bottom of the page)
-  padding:13rem 0 0 0;
+  padding:15rem 0 0 0;
   position:relative;
   
   .section-title-wrapper{
@@ -88,7 +88,8 @@ section{
   .img-left{
     margin: 0 auto;
     margin-bottom:4rem;
-    max-width:375px;
+    margin-right: 3rem;
+    // max-width:375px;
     
     img{
       max-width:100%;
@@ -116,13 +117,13 @@ footer{
   .footer-wrapper{
     margin-top:8rem;
     @include caravel-regular();
-    padding-bottom:3rem;
+    padding-bottom:5rem;
     text-align:right;
   }
   
   .footer-content{
-    padding-top:1rem;
-    font-size: 14.5px;
+    padding-top:1.5rem;
+    font-size: 15px;
   }
   
 }
